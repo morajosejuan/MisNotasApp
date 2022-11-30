@@ -7,10 +7,114 @@
     tools:context=".IngresarActivity">
 
     <TextView
-        android:id="@+id/txtIngresar"
+        android:id="@+id/txtNombre2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Mis Notas APP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ingreso"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIngresar"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="21dp"
+        android:text="App móvil para que calcules tú promedio semestral en tus estudios, además podrás almacenar semestre a semestre tus notas para tenerlas siempre a la mano."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtingreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Ingrese Contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/editUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editUsuario"
+        app:layout_constraintStart_toStartOf="@+id/txtIngresar"
+        app:layout_constraintTop_toTopOf="@+id/editPassword" />
+
+    <EditText
+        android:id="@+id/editUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtingreso" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:text="Usuario"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btningreso"
+        app:layout_constraintStart_toStartOf="@+id/btningreso" />
+
+    <Button
+        android:id="@+id/btningreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
         android:text="Ingresar"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="168dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
