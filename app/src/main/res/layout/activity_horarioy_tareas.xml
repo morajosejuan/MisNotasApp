@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".HorarioyTareasActivity">
 
+    <TextView
+        android:id="@+id/txtHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario de Clases"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="15dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

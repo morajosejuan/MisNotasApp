@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".CalcularPromedioActivity">
 
+    <TextView
+        android:id="@+id/txtCalProme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculo de Promedio"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="34dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
