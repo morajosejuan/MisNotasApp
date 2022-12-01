@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "823841476879",
+    "project_id": "misnotasapp-22ebd",
+    "storage_bucket": "misnotasapp-22ebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823841476879:android:87fbd1ce94a0997a6dae7a",
+        "android_client_info": {
+          "package_name": "com.zzc.misnotasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823841476879-rmdv3e8vtrtp20ssfjoh6v04er0kc3p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAB3apzJzoWe1b2-5fCNBX0hagHt4cdTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823841476879-rmdv3e8vtrtp20ssfjoh6v04er0kc3p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
