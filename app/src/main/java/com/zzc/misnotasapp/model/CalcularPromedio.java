@@ -1,2 +1,4 @@
-package com.zzc.misnotasapp.model;public class CalcularPromedio {
+package com.zzc.misnotasapp.model;
+
+public class CalcularPromedio {
 }
