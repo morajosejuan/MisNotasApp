@@ -4,11 +4,8 @@ public class Estudiante {
     private String apellido;
     private String direccion;
     private String nombre;
-    private int documento;
-    private int telefono;
-
-    public Estudiante() {
-    }
+    private String documento;
+    private String telefono;
 
     public String getApellido() {
         return apellido;
@@ -34,19 +31,19 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
-    public int getDocumento() {
+    public String getDocumento() {
         return documento;
     }
 
-    public void setDocumento(int documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -56,8 +53,8 @@ public class Estudiante {
                 "apellido='" + apellido + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", nombre='" + nombre + '\'' +
-                ", documento=" + documento +
-                ", telefono=" + telefono +
+                ", documento='" + documento + '\'' +
+                ", telefono='" + telefono + '\'' +
                 '}';
     }
 }

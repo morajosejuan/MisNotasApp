@@ -11,11 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="416dp"
         android:fontFamily="sans-serif-medium"
         android:text="Mis Notas APP"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/ListvUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,15 +52,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="7dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Ingrese Contraseña"
-        app:layout_constraintEnd_toEndOf="@+id/editUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <TextView
         android:id="@+id/textView"
@@ -71,20 +73,20 @@
         android:ems="10"
         android:text="Contraseña"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editPassword"
-        app:layout_constraintEnd_toStartOf="@+id/editUsuario"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintEnd_toStartOf="@+id/txtUsuario"
         app:layout_constraintStart_toStartOf="@+id/txtIngresar"
-        app:layout_constraintTop_toTopOf="@+id/editPassword" />
+        app:layout_constraintTop_toTopOf="@+id/txtPassword" />
 
     <EditText
-        android:id="@+id/editUsuario"
+        android:id="@+id/txtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ingrese Usuario"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtingreso" />
 
@@ -116,5 +118,17 @@
         android:layout_marginTop="27dp"
         android:text="Ingresar"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <ListView
+        android:id="@+id/listvUsuario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
